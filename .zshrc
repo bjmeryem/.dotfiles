@@ -11,6 +11,7 @@ alias gacp="git add . && git commit -m update_dotfiles && git push"
 alias movetogoinfre="curl -fsSL https://raw.githubusercontent.com/hakamdev/MOVE_TO_GOINFRE/main/installation.sh | zsh"
 alias clonecformat="git clone https://github.com/cacharle/c_formatter_42 ~/goinfre/c_formatter_42"
 alias installcformat="cd ~/goinfre/c_formatter_42 && pip install -e . && cd -"
+alias installomz="sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)""
 # LINKVZ: to link .vimrc and .zshrc, you don't need to use it, it serves in the next alias
 alias linkvz="ln -s $DOTFILES/.zshrc ~/.zshrc; ln -s $DOTFILES/.vimrc ~/.vimrc"
 alias linkdotfiles="gcl $DOTFILES_REPO $DOTFILES && rm ~/.vimrc ~/.zshrc && linkvz"
