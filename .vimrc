@@ -23,8 +23,8 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 nmap <F2> :Stdheader<CR>
-let g:hdr42user="abechcha"
-let g:hdr42mail="abechcha@student.1337.ma"
+let g:hdr42user="mebenjel"
+let g:hdr42mail="mebenjel@student.1337.ma"
 
 "<User Interface>
 syntax on " Enable syntax processing
