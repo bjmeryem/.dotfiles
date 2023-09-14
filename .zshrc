@@ -1,5 +1,8 @@
 ### My configs ###
 
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 export DOTFILES=~/goinfre/dotfiles
 export DOTFILES_REPO=git@github.com:bjmeryem/.dotfiles.git
 
@@ -18,11 +21,7 @@ alias linkdotfiles="gcl $DOTFILES_REPO $DOTFILES && rm ~/.vimrc ~/.zshrc && link
 alias pushrc="cd $DOTFILES && ./push.sh && cd -"
 alias pullrc="cd $DOTFILES && git pull && cd -"
 
-export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/mebenjel/Library/Python/3.8/bin"
-
-
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/mebenjel/Library/Python/3.9/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
