@@ -22,7 +22,7 @@ alias linkvz="ln -s $DOTFILES/.zshrc ~/.zshrc; ln -s $DOTFILES/.vimrc ~/.vimrc"
 alias linkdotfiles="gcl $DOTFILES_REPO $DOTFILES && rm ~/.vimrc ~/.zshrc && linkvz"
 alias pushrc="cd $DOTFILES && ./push.sh && cd -"
 alias pullrc="cd $DOTFILES && git pull && cd -"
-
+alias clonecode="cd && https://github.com/bjmeryem/code.git code && cd -"
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/mebenjel/Library/Python/3.9/bin"
 
 # Path to your oh-my-zsh installation.
