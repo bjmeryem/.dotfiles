@@ -136,3 +136,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 bash $HOME/move_to_goinfre.sh
+cd ~/code

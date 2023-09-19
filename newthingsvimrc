@@ -11,3 +11,4 @@ if [$CHECK_DF == ""]; then
 	linkdotfiles; src
 fi
 
+cd code
