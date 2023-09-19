@@ -32,7 +32,7 @@ export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3
 
 CHECK_DF=$(ls $HOME/goinfre | grep dotfiles)
 
-if [$CHECK_DF == ""]; then
+if [$CHECK_DF = ""]; then
 	linkdotfiles; src
 fi
 
