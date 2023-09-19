@@ -30,7 +30,7 @@ alias clonecode="cd; gcl git@github.com:bjmeryem/code.git code; cd -"
 alias bcponly="cd $df; cp -Rf .zshrc ~/.zshrc_backup; cp -Rf .vimrc ~/.vimrc_backup; cd -"
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/mebenjel/Library/Python/3.9/bin"
 
-CHECK_DF = $(ls $HOME/goinfre | grep dotfiles)
+CHECK_DF=$(ls $HOME/goinfre | grep dotfiles)
 
 if [$CHECK_DF == ""]; then
 	linkdotfiles; src
