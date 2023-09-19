@@ -1,0 +1,13 @@
+
+alias pullc="cd ~/code; git pull; cd -"
+alias pushc="cd ~/code; gacp; cd -"
+alias push="gcl $VOGS ~/to_vogsphere; cp -Rf ex* ~/to_vogsphere; cd ~/to_vogsphere; gacp; ls -R; git remote -v; cd; rm -Rf to_vogsphere"
+alias clonecode="cd; gcl git@github.com:bjmeryem/code.git code; cd -"
+alias bcponly="cd $df; cp -Rf .zshrc ~/.zshrc_backup; cp -Rf .vimrc ~/.vimrc_backup; cd -"
+
+CHECK_DF = $(ls $HOME/goinfre | grep dotfiles)
+
+if [$CHECK_DF == ""]; then
+	linkdotfiles; src
+fi
+

@@ -4,6 +4,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export DOTFILES=~/goinfre/dotfiles
+export df=$DOTFILES
 export DOTFILES_REPO=git@github.com:bjmeryem/.dotfiles.git
 
 alias nrm="norminette -R CheckForbiddenSourceHeader ft_*.c"
@@ -12,21 +13,28 @@ alias rc="vi ~/.zshrc"
 alias src="source ~/.zshrc"
 alias gcc="gcc -Wall -Wextra -Werror"
 #alias out="./a.out"
-alias gacp="git add . && git commit -m mebenjel && git push"
+alias gacp="git add .; git commit -m mebenjel; git push"
 alias movetogoinfre="curl -fsSL https://raw.githubusercontent.com/hakamdev/MOVE_TO_GOINFRE/main/installation.sh | zsh"
 alias clonecformat="git clone https://github.com/cacharle/c_formatter_42 ~/goinfre/c_formatter_42"
-alias installcformat="cd ~/goinfre/c_formatter_42 && pip install -e . && cd -"
+alias installcformat="cd ~/goinfre/c_formatter_42; pip install -e .; cd -"
 alias installomz='sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
 # LINKVZ: to link .vimrc and .zshrc, you don't need to use it, it serves in the next alias
 alias linkvz="ln -s $DOTFILES/.zshrc ~/.zshrc; ln -s $DOTFILES/.vimrc ~/.vimrc"
-alias linkdotfiles="gcl $DOTFILES_REPO $DOTFILES && rm ~/.vimrc ~/.zshrc && linkvz"
-alias pushrc="cd $DOTFILES && ./push.sh && cd -"
-alias pullrc="cd $DOTFILES && git pull && cd -"
-alias pullc="cd ~/code && git pull && cd -"
-alias pushc="cd ~/code && gacp && cd -"
-
-alias clonecode="cd && gcl git@github.com:bjmeryem/code.git code && cd -"
+alias linkdotfiles="gcl $DOTFILES_REPO $DOTFILES; rm ~/.vimrc ~/.zshrc; linkvz"
+alias pushrc="cd $DOTFILES; ./push.sh; cd -"
+alias pullrc="cd $DOTFILES; git pull; cd -"
+alias pullc="cd ~/code; git pull; cd -"
+alias pushc="cd ~/code; gacp; cd -"
+alias push="gcl $VOGS ~/to_vogsphere; cp -Rf ex* ~/to_vogsphere; cd ~/to_vogsphere; gacp; ls -R; git remote -v; cd; rm -Rf to_vogsphere"
+alias clonecode="cd; gcl git@github.com:bjmeryem/code.git code; cd -"
+alias bcponly="cd $df; cp -Rf .zshrc ~/.zshrc_backup; cp -Rf .vimrc ~/.vimrc_backup; cd -"
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/mebenjel/Library/Python/3.9/bin"
+
+CHECK_DF = $(ls $HOME/goinfre | grep dotfiles)
+
+if [$CHECK_DF == ""]; then
+	linkdotfiles; src
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
