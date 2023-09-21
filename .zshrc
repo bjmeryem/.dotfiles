@@ -5,7 +5,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export DOTFILES=~/goinfre/dotfiles
 export df=$DOTFILES
-export v=
 
 export DOTFILES_REPO=git@github.com:bjmeryem/.dotfiles.git
 alias nrm="norminette -R CheckForbiddenSourceHeader ft_*.c"
@@ -13,7 +12,7 @@ alias nrmall="nrm */ft_*.c"
 alias rc="vi ~/.zshrc"
 alias src="source ~/.zshrc"
 alias gcc="gcc -Wall -Wextra -Werror"
-#alias out="./a.out"
+alias out='./a.out'
 alias gacp="git add . && git commit -m mebenjel && git push"
 alias movetogoinfre="curl -fsSL https://raw.githubusercontent.com/hakamdev/MOVE_TO_GOINFRE/main/installation.sh | zsh"
 alias clonecformat="git clone https://github.com/cacharle/c_formatter_42 ~/goinfre/c_formatter_42"
