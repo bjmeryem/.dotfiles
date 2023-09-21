@@ -5,8 +5,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export DOTFILES=~/goinfre/dotfiles
 export df=$DOTFILES
-export DOTFILES_REPO=git@github.com:bjmeryem/.dotfiles.git
+export v=
 
+export DOTFILES_REPO=git@github.com:bjmeryem/.dotfiles.git
 alias nrm="norminette -R CheckForbiddenSourceHeader ft_*.c"
 alias nrmall="nrm */ft_*.c"
 alias rc="vi ~/.zshrc"
@@ -25,9 +26,10 @@ alias pushrc="cd $DOTFILES && ./push.sh && cd -"
 alias pullrc="cd $DOTFILES && git pull && cd -"
 alias pullc="cd ~/code && git pull && cd -"
 alias pushc="cd ~/code && gacp && cd -"
-alias push="git clone $VOGS ~/to_vogsphere && cp -Rf ex* ~/to_vogsphere && cd ~/to_vogsphere && gacp && ls -R && git remote -v && cd && rm -Rf to_vogsphere"
+alias tovogs="mkdir ~/to_vogsphere && gcl $VOGS ~/to_vogsphere && cp -Rf ex* ~/to_vogsphere && cd ~/to_vogsphere && gacp"
+alias push="tovogs && ls -R && git remote -v | grep push && cd && rm -Rf to_vogsphere && cd ~/code"
 alias clonecode="cd && gcl git@github.com:bjmeryem/code.git code && cd -"
-alias bcponly="cd $df && cp -Rf .zshrc ~/.zshrc_backup && cp -Rf .vimrc ~/.vimrc_backup && cd -"
+alias bcponly="cp -Rf $df/.zshrc ~/.zshrc_backup && cp -Rf $df/.vimrc ~/.vimrc_backup"
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/mebenjel/Library/Python/3.9/bin"
 
 CHECK_DF=$(ls $HOME/goinfre | grep dotfiles)
