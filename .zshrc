@@ -20,14 +20,14 @@ alias installomz='sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/
 # LINKVZ: to link .vimrc and .zshrc, you don't need to use it, it serves in the next alias
 alias linkvz="ln -s $DOTFILES/.zshrc ~/.zshrc && ln -s $DOTFILES/.vimrc ~/.vimrc"
 alias linkdotfiles="gcl $DOTFILES_REPO $DOTFILES && rm ~/.vimrc ~/.zshrc && linkvz"
+alias bcponly="cp -Rf $df/.zshrc ~/.zshrc_backup && cp -Rf $df/.vimrc ~/.vimrc_backup"
 alias pushrc="cd $DOTFILES && ./push.sh && cd -"
-alias pullrc="cd $DOTFILES && git pull && cd -"
+alias pullrc="cd $DOTFILES && git pull && src && bcponly"
 alias pullc="cd ~/code && git pull && cd -"
 alias pushc="cd ~/code && gacp && cd -"
 alias tovogs="[ $VOGS ] && gcl $VOGS to_vogsphere && cp -Rf ex* to_vogsphere && cd to_vogsphere && gacp"
 alias push="tovogs && ls -R && git remote -v | grep push && cd .. && rm -Rf to_vogsphere && echo '--> Success.'"
 alias clonecode="cd && gcl git@github.com:bjmeryem/code.git code && cd -"
-alias bcponly="cp -Rf $df/.zshrc ~/.zshrc_backup && cp -Rf $df/.vimrc ~/.vimrc_backup"
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/mebenjel/Library/Python/3.9/bin"
 
 CHECK_DF=$(ls $HOME/goinfre | grep dotfiles)
@@ -37,7 +37,7 @@ if [ $CHECK_DF = "" ]; then
 fi
 
 cd ~/code
-pullc; gacp
+pullrc; gacp
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
