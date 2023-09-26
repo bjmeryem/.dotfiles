@@ -24,7 +24,7 @@ alias pushrc="cd $DOTFILES && ./push.sh && cd -"
 alias pullrc="cd $DOTFILES && git pull && cd -"
 alias pullc="cd ~/code && git pull && cd -"
 alias pushc="cd ~/code && gacp && cd -"
-alias tovogs="mkdir to_vogsphere && gcl $VOGS to_vogsphere && cp -Rf ex* to_vogsphere && cd to_vogsphere && gacp"
+alias tovogs="[ $VOGS ] && gcl $VOGS to_vogsphere && cp -Rf ex* to_vogsphere && cd to_vogsphere && gacp"
 alias push="tovogs && ls -R && git remote -v | grep push && cd .. && rm -Rf to_vogsphere && echo '--> Success.'"
 alias clonecode="cd && gcl git@github.com:bjmeryem/code.git code && cd -"
 alias bcponly="cp -Rf $df/.zshrc ~/.zshrc_backup && cp -Rf $df/.vimrc ~/.vimrc_backup"
@@ -33,9 +33,11 @@ export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3
 CHECK_DF=$(ls $HOME/goinfre | grep dotfiles)
 
 if [ $CHECK_DF = "" ]; then
-	linkdotfiles && src
+	linkdotfiles && src && bcponly
 fi
 
+cd ~/code
+pullc; gacp
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -136,4 +138,3 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 bash $HOME/move_to_goinfre.sh
-cd ~/code
