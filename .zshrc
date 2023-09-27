@@ -37,7 +37,6 @@ if [ $CHECK_DF = "" ]; then
 fi
 
 cd ~/code
-git diff --quiet && gacp
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
