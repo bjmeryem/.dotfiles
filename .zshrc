@@ -6,7 +6,7 @@ export DOTFILES=~/goinfre/dotfiles
 export df=$DOTFILES
 export DOTFILES_REPO=git@github.com:bjmeryem/.dotfiles.git
 
-alias nrm="norminette -R CheckForbiddenSourceHeader ft_*.c"
+alias nrm="norminette -R CheckForbiddenSourceHeader"
 alias nrmall="nrm */ft_*.c"
 alias rc="vi ~/.zshrc"
 alias src="source ~/.zshrc"
