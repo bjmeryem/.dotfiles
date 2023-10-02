@@ -26,7 +26,7 @@ alias pullrc="cd $DOTFILES && git pull && bcponly && cd -"
 alias pullc="cd ~/code && git pull && cd -"
 alias pushc="cd ~/code && gacp && cd -"
 alias tovogs="src && cd - && [ $VOGS ] && gcl $VOGS to_vogsphere && cp -Rf ex* to_vogsphere && cd to_vogsphere && gacp"
-alias push="tovogs && ls -R && git remote -v | grep push && cd .. && rm -Rf to_vogsphere && echo '--> Success.'"
+alias push="tovogs && ls -R && nrmall && git remote -v | grep push && cd .. && rm -Rf to_vogsphere && echo '--> Success.'"
 alias clonecode="cd && gcl git@github.com:bjmeryem/code.git code && cd -"
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/mebenjel/Library/Python/3.9/bin"
 
