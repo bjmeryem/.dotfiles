@@ -4,11 +4,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'lilydjwg/colorizer'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-syntastic/syntastic'
-"Plug 'sirver/ultisnips'
+""Plug 'sirver/ultisnips'
 Plug 'pbondoer/vim-42header'
 Plug 'vim-airline/vim-airline'
 Plug 'crusoexia/vim-monokai'
 Plug 'honza/vim-snippets'
+Plug 'pbondoer/vim-42header'
+Plug 'cacharle/c_formatter_42.vim'
+Plug 'dense-analysis/ale'          "to install ALE
 call plug#end()
 
 "<Plugins config>
@@ -23,8 +26,8 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 nmap <F2> :Stdheader<CR>
-let g:hdr42user="mebenjel"
-let g:hdr42mail="mebenjel@student.1337.ma"
+let g:hdr42user = $LOGIN
+let g:hdr42mail = $LOGIN . "@student.1337.ma"
 
 "<User Interface>
 syntax on " Enable syntax processing
@@ -80,9 +83,9 @@ function FoldToggle()
 		let $fold=0
 	endif
 endf
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -90,14 +93,11 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-
 " install vim-auto-save
 Plugin 'git@github.com:907th/vim-auto-save.git'
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -114,14 +114,24 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
 " .vimrc
 let g:auto_save = 1  " enable AutoSave on Vim startup
 
-call plug#begin()
-    Plug 'cacharle/c_formatter_42.vim'
-call plug#end()
+map <F8> :setlocal spell! spelllang=en_gb<CR>
+set tabstop=8 shiftwidth=8
+"set autoindent
+"set smartindent
+set cindent
+syntax enable
+"set number
+set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
+"syntax on
+set undofile
+set undodir=/tmp
+inoremap <C-H> <C-W>
 
+"you can delete above commands but make sure to include this one here are mandatory
 
+let g:ale_linters = {'c':['gcc']}
 let g:c_formatter_42_set_equalprg=1
 let g:c_formatter_42_format_on_save=1

@@ -1,21 +1,30 @@
 ### My configs ###
 
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export DOTFILES=~/goinfre/dotfiles
-export df=$DOTFILES
-export DOTFILES_REPO=git@github.com:bjmeryem/.dotfiles.git
 
+# Intra login
+export LOGIN=merbenje
+
+# Github
+export GITHUB_LOGIN=bjmeryem
+export DOTFILES_REPO=git@github.com:$GITHUB_LOGIN/.dotfiles.git
+
+export DOTFILES=~/.dotfiles
+export df=$DOTFILES
+
+alias vimrc="vi ~/.vimrc"
 alias nrm="norminette -R CheckForbiddenSourceHeader"
 alias nrmall="nrm */ft_*.c"
 alias rc="vi ~/.zshrc"
 alias src="source ~/.zshrc"
 alias gcc="gcc -Wall -Wextra -Werror"
 alias out='./a.out'
-alias gacp="git add . && git commit -m mebenjel && git push"
+alias gacp="git add . && git commit -m $LOGIN && git push"
 alias movetogoinfre="curl -fsSL https://raw.githubusercontent.com/hakamdev/MOVE_TO_GOINFRE/main/installation.sh | zsh"
-alias clonecformat="git clone https://github.com/cacharle/c_formatter_42 ~/goinfre/c_formatter_42"
-alias installcformat="cd ~/goinfre/c_formatter_42 && pip install -e . && cd -"
+alias clonecformat="git clone https://github.com/cacharle/c_formatter_42 ~/.c_formatter_42"
+alias installcformat="python3 -m pip install --user c-formatter-42"
 alias installomz='sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
 # LINKVZ: to link .vimrc and .zshrc, you don't need to use it, it serves in the next alias
 alias linkvz="ln -s $DOTFILES/.zshrc ~/.zshrc && ln -s $DOTFILES/.vimrc ~/.vimrc"
@@ -23,24 +32,22 @@ alias linkdotfiles="gcl $DOTFILES_REPO $DOTFILES && rm ~/.vimrc ~/.zshrc && link
 alias bcponly="cp -Rf $df/.zshrc ~/.zshrc_backup && cp -Rf $df/.vimrc ~/.vimrc_backup"
 alias pushrc="cd $DOTFILES && ./push.sh && cd -"
 alias pullrc="cd $DOTFILES && git pull && bcponly && cd -"
-alias pullc="cd ~/code && git pull && cd -"
-alias pushc="cd ~/code && gacp && cd -"
-alias tovogs="[ $VOGS ] && gcl $VOGS to_vogsphere && cp -Rf ex* to_vogsphere && cd to_vogsphere && gacp"
-alias push="tovogs && ls -R && nrmall && git remote -v | grep push && cd .. && rm -Rf to_vogsphere && echo '--> Success.'"
-alias clonecode="cd && gcl git@github.com:bjmeryem/code.git code && cd -"
-export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/mebenjel/Library/Python/3.9/bin"
-
-CHECK_DF=$(ls $HOME/goinfre | grep dotfiles)
-
-if [ $CHECK_DF = "" ]; then
-	linkdotfiles && src && bcponly
-fi
-
+#alias pullc="cd ~/code && git pull && cd -"
+#alias pushc="cd ~/code && gacp && cd -"
+#alias tovogs="[ $VOGS ] && gcl $VOGS to_vogsphere && cp -Rf ex* to_vogsphere && cd to_vogsphere && gacp"
+#alias push="tovogs && ls -R && nrmall && git remote -v | grep push && cd .. && rm -Rf to_vogsphere && echo '--> Success.'"
+#alias clonecode="cd && gcl git@github.com:$LOGIN/code.git code && cd -"
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/$LOGIN/Library/Python/3.9/bin:$HOME/Library/Python/3.9/lib/python/site-packages"
+alias setvundle="git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
+alias installvimcake="git clone --depth=1 git@github.com:ChuOkupai/vimcake.git ~/.vimcake && cd ~/.vimcake && make install && cd -"
+alias installvimplug="curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 cd ~/code
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
+
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
