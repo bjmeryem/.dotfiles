@@ -5,7 +5,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Intra login
-export LOGIN=merbenje
+source ~/.login
 
 # Github
 export GITHUB_LOGIN=bjmeryem
