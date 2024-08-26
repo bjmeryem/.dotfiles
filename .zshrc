@@ -40,6 +40,7 @@ alias pullrc="cd $DOTFILES && git pull && bcponly && cd -"
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:/Users/$LOGIN/Library/Python/3.9/bin:$HOME/Library/Python/3.9/lib/python/site-packages"
 alias setvundle="git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
 alias installvimcake="git clone --depth=1 git@github.com:ChuOkupai/vimcake.git ~/.vimcake && cd ~/.vimcake && make install && cd -"
+alias setbrew="curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh"
 alias installvimplug="curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 cd ~/code
