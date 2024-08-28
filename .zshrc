@@ -154,3 +154,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 bash $HOME/move_to_goinfre.sh
+alias mini="~/.mini-moulinette/mini-moul.sh"
