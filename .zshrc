@@ -44,7 +44,7 @@ alias installvimcake="git clone --depth=1 git@github.com:ChuOkupai/vimcake.git ~
 alias setbrew="curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh"
 alias installvimplug="curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
-alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-moulinette.git ~/.mini-moulinette && echo "alias mini='~/.mini-moulinette/mini-moul.sh' >> ~/.zshrc && source ~/.zshrc"
+alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-moulinette.git ~/.mini-moulinette && echo "alias mini='~/.mini-moulinette/mini-moul.sh'" >> ~/.zshrc && source ~/.zshrc"
 cd ~/code
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
