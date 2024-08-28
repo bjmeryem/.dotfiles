@@ -45,7 +45,14 @@ alias setbrew="curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh |
 alias installvimplug="curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-moulinette.git ~/.mini-moulinette && echo 'alias mini=\"~/.mini-moulinette/mini-moul.sh\"' >> ~/.zshrc && source ~/.zshrc"
+
+### Some commands:
+
 cd ~/code
+
+### OMZ config
+
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
