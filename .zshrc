@@ -1,11 +1,4 @@
-### My configs ###
-
-# Github
-export GITHUB_LOGIN=bjmeryem
-export DOTFILES_REPO=git@github.com:$GITHUB_LOGIN/.dotfiles.git
-
 export df=~/.dotfiles
-
 # Personal space
 source ~/$df/.personal
 
