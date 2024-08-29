@@ -35,21 +35,16 @@ alias installvimcake="git clone --depth=1 git@github.com:ChuOkupai/vimcake.git ~
 alias installvundle="git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
 alias installhomebrew="curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh"
 alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-moulinette.git ~/.mini-moulinette"
+alias mini="~/.mini-moulinette/mini-moul.sh"
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.9/site-packages/"
-export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/"
-export PATH="$PATH:$HOME/Library/Python/3.8/lib/python/site-packages"
-export PATH="$PATH:$HOME/Library/Python/3.9/lib/python/site-packages"
-export PATH="$PATH:$HOME/Library/Python/3.8/bin"
-export PATH="$PATH:$HOME/Library/Python/3.9/bin"
+export PATH=/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.9/site-packages/:$PATH
+export PATH=/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:$PATH
+export PATH=$HOME/Library/Python/3.8/lib/python/site-packages:$PATH
+export PATH=$HOME/Library/Python/3.9/lib/python/site-packages:$PATH
+export PATH=$HOME/Library/Python/3.8/bin:$PATH
+export PATH=$HOME/Library/Python/3.9/bin:$PATH
 
-### Some commands:
-
-echo "Welcome, $USER!"
-cd ~/code
-
-### OMZ config
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -60,6 +55,7 @@ DISABLE_MAGIC_FUNCTIONS="true"
 ENABLE_CORRECTION="true"
 plugins=(git)
 
+echo "Welcome, $USER!"
+cd ~/code
 source $ZSH/oh-my-zsh.sh
 bash $HOME/move_to_goinfre.sh
-alias mini="~/.mini-moulinette/mini-moul.sh"
