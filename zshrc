@@ -2,10 +2,7 @@ export df=~/.dotfiles
 # Personal space
 source ~/$df/.personal
 
-# مختصر للنورمينيت من داخل التمرين 
 alias nrm="norminette -R CheckForbiddenSourceHeader"
-
-# مختصر للنورمينيت من داخل المشروع
 alias nrmall="nrm */ft_*.c"
 
 alias vimrc="vi ~/.vimrc"
@@ -27,6 +24,7 @@ alias installvimcake="git clone --depth=1 git@github.com:ChuOkupai/vimcake.git ~
 alias installvundle="git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
 alias installhomebrew="curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh"
 alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-moulinette.git ~/.mini-moulinette"
+alias setgitignore="git config --global core. excludesfile ~/. gitignore"
 alias mini="~/.mini-moulinette/mini-moul.sh"
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
