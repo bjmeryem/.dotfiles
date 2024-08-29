@@ -27,15 +27,14 @@ alias pushrc="cd $df && ./push.sh && cd -"
 alias pullrc="cd $df && git pull && cd -"
 
 alias movetogoinfre="curl -fsSL https://raw.githubusercontent.com/hakamdev/MOVE_TO_GOINFRE/main/installation.sh | zsh"
-alias clonecformat="git clone https://github.com/cacharle/c_formatter_42 ~/.c_formatter_42"
 alias installcformat="pip install --user c-formatter-42"
 alias installomz='sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
-alias setvundle="git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
-alias installvimcake="git clone --depth=1 git@github.com:ChuOkupai/vimcake.git ~/.vimcake && cd ~/.vimcake && make install && cd -"
-alias setbrew="curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh"
 alias installvimplug="curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
-alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-moulinette.git ~/.mini-moulinette && echo 'alias mini=\"~/.mini-moulinette/mini-moul.sh\"' >> ~/.zshrc && source ~/.zshrc"
+alias installvimcake="git clone --depth=1 git@github.com:ChuOkupai/vimcake.git ~/.vimcake && cd ~/.vimcake && make install && cd -"
+alias installvundle="git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
+alias installhomebrew="curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh"
+alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-moulinette.git ~/.mini-moulinette"
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.9/site-packages/"
