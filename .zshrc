@@ -21,15 +21,15 @@ alias src="source ~/.zshrc"
 alias gcc="gcc -Wall -Wextra -Werror"
 alias out='./a.out'
 alias gacp="git add . && git commit -m $USER && git push"
+
+alias linkvz="ln -s $df/.zshrc ~/.zshrc && ln -s $df/.vimrc ~/.vimrc"
+alias pushrc="cd $df && ./push.sh && cd -"
+alias pullrc="cd $df && git pull && cd -"
+
 alias movetogoinfre="curl -fsSL https://raw.githubusercontent.com/hakamdev/MOVE_TO_GOINFRE/main/installation.sh | zsh"
 alias clonecformat="git clone https://github.com/cacharle/c_formatter_42 ~/.c_formatter_42"
 alias installcformat="pip install --user c-formatter-42"
 alias installomz='sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
-alias linkvz="ln -s $df/.zshrc ~/.zshrc && ln -s $df/.vimrc ~/.vimrc"
-alias pushrc="cd $df && ./push.sh && cd -"
-alias pullrc="cd $df && git pull && cd -"
-export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:$HOME/Library/Python/3.9/bin:$HOME/Library/Python/3.9/lib/python/site-packages"
-export PATH="$PATH:$HOME/Library/Python/3.8/bin"
 alias setvundle="git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
 alias installvimcake="git clone --depth=1 git@github.com:ChuOkupai/vimcake.git ~/.vimcake && cd ~/.vimcake && make install && cd -"
 alias setbrew="curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh"
@@ -37,9 +37,17 @@ alias installvimplug="curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-moulinette.git ~/.mini-moulinette && echo 'alias mini=\"~/.mini-moulinette/mini-moul.sh\"' >> ~/.zshrc && source ~/.zshrc"
 
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.9/site-packages/"
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/"
+export PATH="$PATH:$HOME/Library/Python/3.8/lib/python/site-packages"
+export PATH="$PATH:$HOME/Library/Python/3.9/lib/python/site-packages"
+export PATH="$PATH:$HOME/Library/Python/3.8/bin"
+export PATH="$PATH:$HOME/Library/Python/3.9/bin"
+
 ### Some commands:
 
-echo "Welcome, $USER"
+echo "Welcome, $USER!"
 cd ~/code
 
 ### OMZ config
