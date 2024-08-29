@@ -1,4 +1,4 @@
-## This is a highly rewarding config for your shell and Vim at 1337 school, for poolers and students, with many useful aliases, Vim plugins, etc.
+### This is a highly rewarding config for your shell and Vim at 1337 school, for poolers and students, with many useful aliases, Vim plugins, etc.
 
 > This includes aliases to setup Oh-My-Zsh, 42 Cformatter, Move_to_goinfre... etc.\
 > If you're good at shell config, you can read the files and explore things\
