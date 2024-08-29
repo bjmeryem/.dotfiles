@@ -28,10 +28,10 @@ alias installcformat="pip install --user c-formatter-42"
 alias installomz='sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
 # LINKVZ: to link .vimrc and .zshrc, you don't need to use it, it serves in the next alias
 alias linkvz="ln -s $DOTFILES/.zshrc ~/.zshrc && ln -s $DOTFILES/.vimrc ~/.vimrc"
-alias linkdotfiles="gcl $DOTFILES_REPO $DOTFILES && rm ~/.vimrc ~/.zshrc && linkvz"
-alias bcponly="cp -Rf $df/.zshrc ~/.zshrc_backup && cp -Rf $df/.vimrc ~/.vimrc_backup"
+#alias linkdotfiles="gcl $DOTFILES_REPO $DOTFILES && rm ~/.vimrc ~/.zshrc && linkvz"
+#alias bcponly="cp -Rf $df/.zshrc ~/.zshrc_backup && cp -Rf $df/.vimrc ~/.vimrc_backup"
 alias pushrc="cd $DOTFILES && ./push.sh && cd -"
-alias pullrc="cd $DOTFILES && git pull && bcponly && cd -"
+alias pullrc="cd $DOTFILES && git pull && cd -"
 #alias pullc="cd ~/code && git pull && cd -"
 #alias pushc="cd ~/code && gacp && cd -"
 #alias tovogs="[ $VOGS ] && gcl $VOGS to_vogsphere && cp -Rf ex* to_vogsphere && cd to_vogsphere && gacp"
