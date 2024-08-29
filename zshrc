@@ -1,6 +1,6 @@
 export df=~/.dotfiles
 # Personal space
-source ~/$df/.personal
+source $df/.personal
 
 alias nrm="norminette -R CheckForbiddenSourceHeader"
 alias nrmall="nrm */ft_*.c"
