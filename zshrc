@@ -15,7 +15,7 @@ alias gcc="gcc -Wall -Wextra -Werror"
 alias out='./a.out'
 alias gacp="git add . && git commit -m $USER && git push"
 
-alias linkvz="ln -s $df/.zshrc ~/.zshrc && ln -s $df/.vimrc ~/.vimrc"
+alias linkvz="ln -s $df/zshrc ~/.zshrc && ln -s $df/vimrc ~/.vimrc"
 alias pullrc="cd $df && git pull && cd -"
 
 alias movetogoinfre="curl -fsSL https://raw.githubusercontent.com/hakamdev/MOVE_TO_GOINFRE/main/installation.sh | zsh"

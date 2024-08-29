@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'lilydjwg/colorizer'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-syntastic/syntastic'
-""Plug 'sirver/ultisnips'
 Plug 'pbondoer/vim-42header'
 Plug 'vim-airline/vim-airline'
 Plug 'crusoexia/vim-monokai'
@@ -26,8 +25,8 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 nmap <F2> :Stdheader<CR>
-let g:hdr42user = $LOGIN
-let g:hdr42mail = $LOGIN . "@student.1337.ma"
+let g:hdr42user = $USER
+let g:hdr42mail = $USER . "@student.1337.ma"
 
 "<User Interface>
 syntax on " Enable syntax processing
@@ -123,9 +122,7 @@ set tabstop=8 shiftwidth=8
 "set smartindent
 set cindent
 syntax enable
-"set number
 set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
-"syntax on
 set undofile
 set undodir=/tmp
 inoremap <C-H> <C-W>
