@@ -38,6 +38,7 @@ export PATH=$HOME/Library/Python/3.9/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
 zstyle ':omz:update' mode disabled  # disable automatic updates
 # Uncomment the following line if pasting URLs and other text is messed up.
 DISABLE_MAGIC_FUNCTIONS="true"
