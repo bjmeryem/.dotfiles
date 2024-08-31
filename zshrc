@@ -2,7 +2,7 @@ export df=~/.dotfiles
 # Personal space
 source $df/.personal
 
-alias nrm="norminette -R CheckForbiddenSourceHeader"
+alias nrm="norminette -R CheckForbiddenSourceHeader ft_*.c"
 alias nrmall="nrm */ft_*.c"
 
 alias vimrc="vi ~/.vimrc"
