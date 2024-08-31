@@ -9,6 +9,7 @@ alias vimrc="vi ~/.vimrc"
 alias rc="vi ~/.zshrc"
 alias src="source ~/.zshrc"
 alias gcc="gcc -Wall -Wextra -Werror"
+alias cc="cc -Wall -Wextra -Werror"
 alias out='./a.out'
 alias gacp="git add . && git commit -m $USER && git push"
 
