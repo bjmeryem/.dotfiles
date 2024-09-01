@@ -18,7 +18,8 @@ Good luck!
 
 <be>
 
-In your terminal: `git clone git@github.com:bjmeryem/.dotfiles.git && source ~/.dotfiles/zshrc`.
+In your terminal: `git clone git@github.com:bjmeryem/.dotfiles.git && source ~/.dotfiles/zshrc`.\
+
 If you find a warning, fix it by installing what's missing:\
 Use an alias from `~/.zshrc`, then source again. (You can now type: `src` to do so!)\
 After `source ~/.dotfiles/zshrc` is ok, remove `~/.zshrc` and `~/.vimrc`, then execute: the command: `linkvz`.\
