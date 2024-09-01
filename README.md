@@ -2,7 +2,7 @@
 
 <br>
 
-> This includes aliases to setup Oh-My-Zsh, Cformatter42, Move_to_goinfre... etc.\
+> This includes aliases to setup Oh-My-Zsh, CFormatter42, Move_to_goinfre... etc.\
 > If you're good at shell config, you can read the files and explore things\
 > Otherwise, please Don't be shy to [reach out to me](https://wa.me/212641134341) for help\
 > Please don't share it widely. Only share it with someone you can help set everything up\
@@ -17,7 +17,7 @@
 
 > Explore the aliases; use the ones that set or install something (the second alias group)\
 > Open `vi test.c`, execute `:PlugInstall` and check that everything is Ok.\
-> Write in the test.c file some C code, then save with `:w` to check whether Cformatter42 will work correctly\
+> Write in the test.c file some C code, then save with `:w` to check whether CFormatter42 will work correctly\
 > You can add your configs in $df/.personal, if you wish to keep them separate from `.zshrc`.\
 > Before or after `setgitignore`, write `a.out, test.c, .personal` in separate lines in `~/.gitignore`\
 > Don't be shy to reach out for help :)\
