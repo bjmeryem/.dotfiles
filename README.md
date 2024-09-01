@@ -28,3 +28,6 @@
 > Don't be shy to reach out for help :).\
 > A good practice if you use `Move to Goinfre` is always opening Terminal before any other app when logging in to a different post.\
 > Your session is fast now, and your terminal is constructive!\
+
+
+
