@@ -6,8 +6,9 @@
 > Please don't share it widely. Only share it with someone you can help set everything up\
 > Good luck!
 
+<hr>
+### The How-to:
 
-### The How-to:\
 > Explore the aliases; use the ones that set or install something (the second alias group)\
 > Open `vi test.c`, execute `:PlugInstall` and check that everything is Ok.\
 > Write in the test.c file some C code, then save with `:w` to check whether C_formatter_42 will work correctly\
