@@ -7,7 +7,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'pbondoer/vim-42header'
 Plug 'vim-airline/vim-airline'
 Plug 'crusoexia/vim-monokai'
-Plug 'honza/vim-snippets'
+"Plug 'honza/vim-snippets'
 Plug 'pbondoer/vim-42header'
 Plug 'cacharle/c_formatter_42.vim'
 Plug 'dense-analysis/ale'          "to install ALE
