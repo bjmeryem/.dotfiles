@@ -1,6 +1,6 @@
 ### This is a highly rewarding config for your shell and Vim at 1337 school, for poolers and students, with many useful aliases, Vim plugins, etc.
 
-<be>
+<br>
 
 > This includes aliases to setup Oh-My-Zsh, 42 Cformatter, Move_to_goinfre... etc.\
 > If you're good at shell config, you can read the files and explore things\
@@ -8,6 +8,7 @@
 > Please don't share it widely. Only share it with someone you can help set everything up\
 > Good luck!
 
+<br>
 <hr>
 
 ### The How-to:
