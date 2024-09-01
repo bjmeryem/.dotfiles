@@ -13,9 +13,9 @@
 
 ### The How-to:
 
-<br>
+<be>
 
-> In your terminal: `git clone git@github.com:bjmeryem/.dotfiles.git && source ~/.dotfiles/zshrc`.\
+In your terminal: `git clone git@github.com:bjmeryem/.dotfiles.git && source ~/.dotfiles/zshrc`.\
 > If you find a warning, fix it by installing what's missing:\
 > Use an alias from `~/.zshrc`, then source again. (You can now type: `src` to do so!)\
 > After `source ~/.dotfiles/zshrc` is ok, remove `~/.zshrc` and `~/.vimrc`, then execute: the command: `linkvz`.\
@@ -27,7 +27,7 @@
 > Before or after `setgitignore`, write `a.out, test.c, .personal` in separate lines in `~/.gitignore`.\
 > Don't be shy to reach out for help :).\
 > A good practice if you use `Move to Goinfre` is always opening Terminal before any other app when logging in to a different post.\
-> Your session is fast now, and your terminal is constructive!\
+> Your session is fast now, and your terminal is constructive!
 
 
 
