@@ -31,6 +31,8 @@ alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-mou
 alias setgitignore="git config --global core.excludesFile ~/.gitignore"
 alias mini="~/.mini-moulinette/mini-moul.sh"
 
+export L=Library
+export PY=Python
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.9/site-packages/:$PATH
 export PATH=/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/:$PATH
