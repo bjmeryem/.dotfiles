@@ -35,10 +35,10 @@ export L=Library
 export PY=Python
 export SP=site-packages
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/$L/Frameworks/$PY.framework/Versions/3.8/lib/python3.9/$SP/:$PATH
-export PATH=/$L/Frameworks/$PY.framework/Versions/3.9/lib/python3.9/$SP/:$PATH
-export PATH=$HOME/$L/$PY/3.8/lib/python/$SP/:$PATH
-export PATH=$HOME/$L/$PY/3.9/lib/python/$SP/:$PATH
+export PATH=/$L/Frameworks/$PY.framework/Versions/3.8/lib/python3.9/$SP:$PATH
+export PATH=/$L/Frameworks/$PY.framework/Versions/3.9/lib/python3.9/$SP:$PATH
+export PATH=$HOME/$L/$PY/3.8/lib/python/$SP:$PATH
+export PATH=$HOME/$L/$PY/3.9/lib/python/$SP:$PATH
 export PATH=$HOME/$L/$PY/3.8/bin:$PATH
 export PATH=$HOME/$L/$PY/3.9/bin:$PATH
 
