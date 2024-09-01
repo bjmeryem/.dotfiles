@@ -2,7 +2,10 @@ export df=~/.dotfiles
 # Personal space
 source $df/.personal
 
+# From the exercise folder
 alias nrm="norminette -R CheckForbiddenSourceHeader ft_*.c"
+
+# From the project folder
 alias nrmall="norminette -R CheckForbiddenSourceHeader */ft_*.c"
 
 alias vimrc="vi ~/.vimrc"
