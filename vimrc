@@ -124,7 +124,7 @@ syntax enable
 set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
 set undofile
 set undodir=/tmp
-inoremap <C-H<C-W>
+inoremap <C-H> <C-W>
 
 "you can delete above commands but make sure to include this one here are mandatory
 
