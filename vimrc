@@ -116,7 +116,7 @@ filetype plugin indent on    " required
 " .vimrc
 let g:auto_save = 1  " enable AutoSave on Vim startup
 
-map <F8:setlocal spell! spelllang=en_gb<CR>
+map <F8 :setlocal spell! spelllang=en_gb<CR>
 set tabstop=8 shiftwidth=8
 "set autoindent
 "set smartindent
