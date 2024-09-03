@@ -20,11 +20,11 @@ let g:colorizer_maxlines = 512
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-map <C-n:NERDTreeToggle<CR>
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<C-z>"
-nmap <F2:Stdheader<CR>
+map <C-n :NERDTreeToggle<CR>
+"let g:UltiSnipsExpandTrigger="<Tab>"
+"let g:UltiSnipsJumpForwardTrigger="<Tab>"
+"let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+nmap <F2 :Stdheader<CR>
 let g:hdr42user = $USER
 let g:hdr42mail = $USER . "@student.1337.ma"
 
@@ -44,7 +44,7 @@ set foldcolumn=1 "Enable mouse to open and close folds
 set nofoldenable "Open files without closed folds
 set confirm "Display a confirmation dialog when closing an unsaved file
 "Toggle fold/unfold all folds
-noremap <F3:call FoldToggle()<CR>
+noremap <F3 :call FoldToggle()<CR>
 
 "<Indent>
 filetype indent on "Enable indentation rules that are file-type specific
