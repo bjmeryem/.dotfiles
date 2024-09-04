@@ -67,6 +67,7 @@ set smartcase "Automatically switch search to case-sensitive when search query c
 "<Miscellaneous>
 set backupdir=~/.cache/vim "Directory to store backup files
 set dir=~/.cache/vim "Directory to store swap files
+set noswapfile "No swap
 set history=256 "Stack size
 set tabpagemax=64 "Maximum number of files that can be opened with vim -p
 set lazyredraw "Don’t update screen during macro and script execution
@@ -117,8 +118,6 @@ let g:auto_save = 1  " enable AutoSave on Vim startup
 
 map <F8> :setlocal spell! spelllang=en_gb<CR>
 set tabstop=8 shiftwidth=8
-"set autoindent
-"set smartindent
 set cindent
 syntax enable
 set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
