@@ -27,9 +27,9 @@ alias installvimplug="curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 alias installvimcake="git clone --depth=1 git@github.com:ChuOkupai/vimcake.git ~/.vimcake && cd ~/.vimcake && make install && cd -"
 alias installvundle="git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
 alias installhomebrew="curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh"
-alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-moulinette.git ~/.mini-moulinette"
+alias installminimoulinette="git clone https://github.com/khairulhaaziq/mini-moulinette.git ~/"
 alias setgitignore="git config --global core.excludesFile ~/.gitignore"
-alias mini="~/.mini-moulinette/mini-moul.sh"
+alias mini="~/mini-moulinette/mini-moul.sh"
 
 export L=Library
 export PY=Python
